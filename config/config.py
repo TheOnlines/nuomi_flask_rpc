@@ -7,7 +7,7 @@ class SphinxConfig(object):
         'host':'127.0.0.1',
         'port': 9312,
         'db': '#',
-        'p':#
+        'p':15
     }
 '''
 mongodb 配置文件
@@ -16,7 +16,7 @@ class MongoConfig(object):
     Mongo_Config = {
         'host':'127.0.0.1',
         'port': 27017,
-        'db': '#',
+        'db': 'pan',
         'name':"#",
         'pwd':"#"
     }
@@ -28,7 +28,7 @@ class MysqlConfig(object):
     Mysql_Config = {
         'host':'127.0.0.1',
         'port': 3306,
-        'db': '#',
+        'db': 'pan',
         'name':"#",
         'pwd':"#"
     }
@@ -37,5 +37,5 @@ class MysqlConfig(object):
 '''
 class Credentials(object):
     Creden_Tials = {
-        'zhaowei':"zhaowei123"
+        'zhaowei':"#"
     }
