@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a23c32a-4052-407a-a5b4-a3417c9cdcf2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/appRpc.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/indexKey.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api/search.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/config.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/check_auth.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/db.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/mono.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/sphinx.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modular.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/script/build_delta_index.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/config.py" afterPath="$PROJECT_DIR$/config/config.py" />
     </list>
     <ignored path="appRpc.iws" />
     <ignored path=".idea/workspace.xml" />
