@@ -24,7 +24,10 @@ def index(name):
 
 
 import api.search
+
 import api.indexKey
+
+import api.detectionlink
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0")

@@ -34,7 +34,7 @@ def index(key,p):
                        continue
                    mono().instanceof().add({'uid': i['id'],'link_url':select.link_url,'create_time':int(select.create_time),'title':select.title,'webtype':int(select.webtype)})
            lists.append(i['id'])
-        listmongo =  mono().instanceof().find({"uid":{"$in":lists}})
+        listmongo =  mono().instanceof().find({"uid":{"$in":lists},"del":{"$exists":False}})
         resList['list'] = sorted(listmongo, key=lambda s: s['uid'],reverse=True)
 
         if int(p+1) <= math.ceil(total/SphinxConfig.Sphinx_Config['p']):

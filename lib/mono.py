@@ -44,7 +44,21 @@ class mono(object):
         finally:
             self.connect.close()
 
+    # 获取数据
+    # surface: 操作的表 默认为test
+    # fiter 要查询的条件
+    def findall(self, fiter={}, surface='share_data'):
+        # print self.mongo[surface].find(fiter, {'_id':0 }).sort({'_id':-1})
+        try:
 
+            return self.mongo[surface].find(fiter, {'_id': 0})
+
+        except:
+
+            return False
+
+        finally:
+            self.connect.close()
     # 增
     #surface: 操作的表 默认为test
     #data 新增的数据
@@ -73,6 +87,25 @@ class mono(object):
                     return self.mongo[surface].remove(data['_id'])
             except:
                 return False
+            finally:
+                self.connect.close()
+
+    # 修改数据
+    # surface: 操作的表 默认为test
+    # set 要修改的数据
+    # filter 条件
+    def update(self, set={},filter={}, surface='share_data'):
+        print set
+        print filter
+        if not set:
+            return "数据不能为空";
+        else:
+            try:
+                return self.mongo[surface].update_one(filter, {"$set": set})
+
+            except:
+                return False
+
             finally:
                 self.connect.close()
 
