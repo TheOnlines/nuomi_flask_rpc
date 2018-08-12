@@ -30,11 +30,14 @@ class Share_users(db.Model):
     create_time = db.Column(db.String(11), nullable=True)
 
     title = db.Column(db.String(200), nullable=True)
+    filesize = db.Column(db.String(200), nullable=True)
+    filetype = db.Column(db.String(200), nullable=True)
 
     webtype = db.Column(db.Integer, nullable=False)
 
-    def __init__(self, uid,link_url, create_time, title,webtype):
-        self.uid = uid
+    def __init__(self, link_url, create_time, title,webtype,filesize,filetype):
+
+
 
         self.link_url = link_url
 
@@ -42,5 +45,26 @@ class Share_users(db.Model):
 
         self.title = title
 
+        self.filesize = filesize
+
+        self.filetype = filetype
+
         self.webtype = webtype
+
+class Spider(db.Model):
+    __tablename__ = 'spider'
+    id = db.Column(db.Integer, primary_key=True)
+
+    pages = db.Column(db.Integer, nullable=False)
+
+    tr = db.Column(db.Integer, nullable=False)
+
+    def __init__(self, id,pages, tr):
+        self.id = id
+
+        self.pages = pages
+
+        self.tr = tr
+
+
 

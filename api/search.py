@@ -29,10 +29,14 @@ def index(key,p):
 
         for i in matches:
            if len(mono().instanceof().find({'uid':i['id']})) == 0:
+               try:
                    select = Share_users.query.filter_by(uid=i['id']).first()
-                   if select is None:
-                       continue
-                   mono().instanceof().add({'uid': i['id'],'link_url':select.link_url,'create_time':int(select.create_time),'title':select.title,'webtype':int(select.webtype)})
+               except:
+                   continue
+
+               if select is None:
+                   continue
+               mono().instanceof().add({'uid': i['id'],'link_url':select.link_url,'create_time':int(select.create_time),'title':select.title,'webtype':int(select.webtype),'filesize':select.filesize})
            lists.append(i['id'])
         listmongo =  mono().instanceof().find({"uid":{"$in":lists},"del":{"$exists":False}})
         resList['list'] = sorted(listmongo, key=lambda s: s['uid'],reverse=True)

@@ -109,4 +109,4 @@ class mono(object):
             finally:
                 self.connect.close()
 
-#print mono().instanceof().find({'uid':111111})
+print mono().instanceof().find({'uid':30842677})
